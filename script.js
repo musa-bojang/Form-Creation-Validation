@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if(username.length < 3){
             isValid = false;
             messages.push('Username must be at least 3 characters long.');
-            
         }
         if(email.includes('@') === false){
             isValid = false;
@@ -29,11 +28,12 @@ document.addEventListener('DOMContentLoaded', function() {
             messages.push('Password must be at least 6 characters long.');
         }
 
-           if(isValid){
+        if(isValid){
+            feedbackDiv.style.display = 'block'
             feedbackDiv.textContent = 'Registration successful!';
             feedbackDiv.style.color = '#28a745';
-            form.reset(); // Reset the form
-        }else {
+            form.reset();
+        } else {
             feedbackDiv.textContent = messages.join(' ');
             feedbackDiv.style.color = '#dc3545';
         }

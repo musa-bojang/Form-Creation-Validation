@@ -49,14 +49,14 @@ button:hover {
     background-color: #0056b3;
 }
 
-#form-feedback {
+/* #form-feedback {
     margin-top: 10px;
     padding: 10px;
     color: #d8000c;
-    background-color: #ffbaba;
+    background-color: #301313;
     border-radius: 4px;
     display: none; /* Initially hide the feedback div */
-}
+} */
 #form-feedback {
     margin-top: 20px;
     display: flex;
