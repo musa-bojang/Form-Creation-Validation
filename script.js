@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             feedbackDiv.style.display = 'block';
             feedbackDiv.innerHTML = ''; // Clear previous messages
-            feedbackDiv.textContent = messages.join(' '); 
+            feedbackDiv.textContent = messages.join('<br>'); 
             feedbackDiv.style.color = '#dc3545';
         }
 
